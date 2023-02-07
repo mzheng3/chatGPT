@@ -11,7 +11,7 @@ This repository gives you step-by-step procedure to install ChatGPT locally on y
 Run the following commands: 
 
 - pip install openai
-- pip install requests numpy tqdm
+- pip install requests numpy tqdm (optional)
 
 **Step Four:** Codes for ChatGPT
 
