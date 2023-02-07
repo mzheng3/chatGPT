@@ -8,15 +8,21 @@ This repository gives you step-by-step procedure to install ChatGPT locally on y
 
 **Step Three:** Install required Python libraries
 
-Running the following commands: 
+Run the following commands: 
 
 - pip install openai
 - pip install requests numpy tqdm
 
 **Step Four:** Codes for ChatGPT
 
-import openai
+Run the following commands:
 
-openai.a
+- import openai
+- openai.api_key = "your own openAI API key"
+- model_engine = "text-davinci-003"
+- prompt = "your inquiry"
+- completion = openai.Completion.create(engine = model_engine, prompt = prompt, max_token = 4097, n = 1, stop = None, temperature = 0.7)
+- message = completion.choices[0]['text']
+- print(message)
 
 
